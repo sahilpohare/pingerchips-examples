@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* General styles for the chat container */
+#chat {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the chat messages container */
+  #messages {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+  }
+  
+  /* Style for the chat input box */
+  #message {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #e1e1e1;
+    font-size: 16px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Style for the send button */
+  #send {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the send button */
+  #send:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Focus effect for the input box */
+  #message:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Chat message styles */
+  .chat-message {
+    background-color: #e2f7fe;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  
+  /* Sender's chat message styles */
+  .chat-message-sender {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  /* Time stamp for chat messages */
+  .time-stamp {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+    text-align: right;
+  }
+  
+  /* Center the chat container */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
