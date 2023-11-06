@@ -2,7 +2,13 @@
 
 ## Introduction
 
-Real-time data visualization is essential in many applications, from monitoring stock prices to tracking IoT sensor data. In this tutorial, we'll demonstrate how to create a real-time line chart using websockets and Plotly, a popular JavaScript charting library. We'll also leverage Pingerchips, a service that provides managed websockets, to simplify the backend setup.
+Real-time data visualization is essential in many applications, from monitoring stock prices to tracking IoT sensor data. In this tutorial, we'll demonstrate how to create a real-time line chart using websockets and Plotly, a popular JavaScript charting library.
+
+You can use libraries like Socket.io to implement websockets in your applications. However, Socket.io is not the only option. There are other libraries that can be used to implement websockets in your applications. But in production, it is very hard to maintain and scale the websockets. You need to manage the servers, load balancers along with maintaining state of the connections and having communication between the servers.
+
+Pingerchips is a hosted service that allows you to easily add real-time functionality to your applications. We will build a basic chat app that demonstrates how to send and receive messages in real time.
+
+We leverage Pingerchips, a service that provides managed websockets, to simplify the backend setup.
 
 ## Prerequisites
 
