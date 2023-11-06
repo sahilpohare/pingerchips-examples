@@ -1,7 +1,6 @@
 const pusher = new Pusher("PINGERCHIPS KEY", {
-  wsHost: "ws.pingerchips.com",
-  wsPort: 6001,
   forceTLS: false,
+  cluster: "mt1",
 });
 
 const messageInput = document.getElementById("message");
