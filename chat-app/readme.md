@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Websockets are a powerful tool for building real-time applications. They enable the server and client to communicate with each other in real time by establishing a persistent connection between the two. This allows the server to send data to the client without the client having to request it.
+Websockets are a powerful tool for building real-time applications. They enable a bi-directional communication between clients in real time by establishing a persistent connection. This allows them to send and receive data between each other seamlessly without having to request for it.
 
 Libraries like Socket.io can be used to implement websockets in your applications though it is not the only option there are many other websockets libraries available. In production, it is quite a challenging job to maintain and scale the websockets which comes with the overhead of managing the servers, and load balancers along with maintaining a state of the connections and having communication between the servers.
 
