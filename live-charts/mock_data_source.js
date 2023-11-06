@@ -1,7 +1,8 @@
-const PusherJS = require("pusher-js");
+const Pingerchips = require("pingerchips-js");
+const crypto = require("crypto");
 
-let client = new PusherJS("YOUR PINGERCHIPS KEY", {
-  wsHost:"ws.pingerchips.com",
+let client = new Pingerchips("YOUR PINGERCHIPS KEY", {
+  wsHost: "ws.pingerchips.com",
   wsPort: 6001,
   forceTLS: false,
   disableStats: true,
@@ -20,7 +21,7 @@ const channel = client.subscribe("graph-data")
 
 
 // function to generate random integer value
-function getRandomInt (min, max) {
+function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -29,10 +30,10 @@ function getRandomInt (min, max) {
 setInterval(() => {
 
   channel.trigger("client-message", {
-    "value":getRandomInt(1, 100)
-    , "counter":counter++
+    value: getRandomInt(1, 100),
+    counter: counter++
   })
   console.log("Counter >> ", counter)
-},1000)
+}, 1000)
 
 

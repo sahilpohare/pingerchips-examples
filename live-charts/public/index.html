@@ -1,22 +1,28 @@
 <html>
     <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script
+            src="https://cdn.plot.ly/plotly-2.27.0.min.js"
+            charset="utf-8"
+        ></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="https://unpkg.com/pingerchips-js@1.0.1-a/dist/web/pingerchips.min.js"></script>
     </head>
     <body>
-    <div class="navbar" align="center"><span>Display real-time data using websockets</span></div>
-    <div class="wrapper">
-        <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
-        <div id="chart"></div>
-        <script src="script.js"></script>
-        <script>
-            Plotly.newPlot('chart',[{
-                y:[0],
-                type:'line'
-            }]);
-            
-        </script>
-    </div>
+        <div class="navbar" align="center">
+            <span>Display real-time data using websockets</span>
+        </div>
+        <div class="wrapper">
+            <div id="chart"></div>
+            <script src="script.js"></script>
+            <script>
+                Plotly.newPlot("chart", [
+                    {
+                        y: [0],
+                        type: "line",
+                    },
+                ]);
+            </script>
+        </div>
     </body>
 </html>
