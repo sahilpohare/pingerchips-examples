@@ -6,9 +6,9 @@ Websockets are a powerful tool for building real-time applications. They enable 
 
 Libraries like Socket.io can be used to implement websockets in your applications though it is not the only option there are many other websockets libraries available. In production, it is quite a challenging job to maintain and scale the websockets which comes with the overhead of managing the servers, and load balancers along with maintaining a state of the connections and having communication between the servers.
 
-PingerChips is a hosted service that allows you to easily add real-time functionality to your applications. Other providers like Pusher provide similar services.
+[PingerChips](https://www.pingerchips.com/?utm=blog&referrer=blog-chat-app) is a hosted service that allows you to easily add real-time functionality to your applications. Other providers like [Pusher](https://pusher.com/) provide similar services.
 
-We will build a basic chat app that demonstrates how to send and receive messages in real time. In this tutorial, we will create a simple real-time chat application with NodeJs using PingerChips.
+We will build a basic chat app that demonstrates how to send and receive messages in real time. In this tutorial, we will create a simple real-time chat application with NodeJs using [PingerChips](https://www.pingerchips.com/?utm=blog&referrer=blog-chat-app).
 
 ## Step 1: Create a New Node.js Project
 
@@ -30,11 +30,11 @@ npm install express pingerchips-js
 
 ## Step 3: Set Up PingerChips Account
 
-1. Go to the [PingerChips website](https://pingerchips.com) and sign up for a free account.
+1. Go to the [PingerChips website](https://www.pingerchips.com/?utm=blog&referrer=blog-chat-app) and sign up for a free account.
     
     ![c](https://cdn.hashnode.com/res/hashnode/image/upload/v1698659114186/293512be-5259-47e6-be16-1f92ec1de77a.png align="center")
     
-2. Create a new app in your PingerChips dashboard to get your API credentials (App ID, Key, Secret).
+2. Create a new app in your [PingerChips](https://www.pingerchips.com/?utm=blog&referrer=blog-chat-app) dashboard to get your API credentials (App ID, Key, Secret).
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698659081186/1300d5e5-56b5-41b2-b03b-4068fe4215ed.png align="center")
     
@@ -47,7 +47,7 @@ npm install express pingerchips-js
 
 ## Step 4: Create the Express Server (server.js)
 
-Create a file named `server.js` and set up your Express server:
+Create a file named `server.js` and set up your Express server to serve the static files in public folder:
 
 ```javascript
 const express = require("express");
@@ -83,9 +83,11 @@ Create an `index.html` file inside a `public` folder to serve as the chat interf
     </body>
 </html>
 ```
+
 ## Step 8: Add CSS styling to our chat interface
 
 Create an `styles.css` file inside a `public` folder to add styling to chat interface
+
 ```css
 
 #chat {
@@ -171,7 +173,6 @@ Create an `styles.css` file inside a `public` folder to add styling to chat inte
     margin: 0;
     background-color: #f0f0f0;
   }
-  
 ```
 
 ## Step 7: Create the Chat Logic (public/app.js)
@@ -236,4 +237,9 @@ Your chat app should now be accessible at [http://localhost:3000](http://localho
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1699283808179/81cdc65b-374d-485d-bd31-e54e056d0a65.png align="center")
 
-That's it! You've created a simple chat app using Node.js and PingerChips. Users can send and receive messages in real-time using PingerChips. Customize and expand the functionality as needed for your application. If you encounter any issues, make sure to check your app credentials and verify that you've followed each step correctly.
+That's it! You've created a simple chat app using Node.js and [PingerChips](https://www.pingerchips.com/?utm=blog&referrer=blog-chat-app). Users can send and receive messages in real-time using [PingerChips](https://www.pingerchips.com/?utm=blog&referrer=blog-chat-app). Customize and expand the functionality as needed for your application. If you encounter any issues, make sure to check your app credentials and verify that you've followed each step correctly.
+
+Code for the above example can be found [here.](https://github.com/sahilpohare/pingerchips-examples)
+
+
+
