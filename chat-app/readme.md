@@ -4,7 +4,7 @@
 
 Websockets are a powerful tool for building real-time applications. They enable the server and client to communicate with each other in real time by establishing a persistent connection between the two. This allows the server to send data to the client without the client having to request it.
 
-Libraries like Socket.io can be used to implement websockets in your applications. However, Socket.io is not the only option. Other libraries can be used to implement websockets in your applications at a small scale. In production, it is quite a challenging job to maintain and scale the websockets which comes with the overhead of managing the servers, and load balancers along with maintaining a state of the connections and having communication between the servers.
+Libraries like Socket.io can be used to implement websockets in your applications though it is not the only option there are many other websockets libraries available. In production, it is quite a challenging job to maintain and scale the websockets which comes with the overhead of managing the servers, and load balancers along with maintaining a state of the connections and having communication between the servers.
 
 PingerChips is a hosted service that allows you to easily add real-time functionality to your applications. Other providers like Pusher provide similar services.
 
