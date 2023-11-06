@@ -82,9 +82,8 @@ Create an `app.js` file inside the `public` folder to handle the chat logic:
 
 ```javascript
 const pingerchips = new Pingerchips("<YOUR APP KEY>", {
-    wsHost: "ws.pingerchips.com",
-    wsPort: 6001,
     forceTLS: false,
+    cluster: "mt1",
 });
 
 const messageInput = document.getElementById("message");
