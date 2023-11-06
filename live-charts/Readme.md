@@ -1,16 +1,15 @@
-**Title: Building Real-Time Data Visualization with Websockets and Plotly using Pingerchips**
+# Title: Building Real-Time Data Visualization with Websockets and Plotly using Pingerchips
 
-**Introduction:**
+## Introduction
 Real-time data visualization is essential in many applications, from monitoring stock prices to tracking IoT sensor data. In this tutorial, we'll demonstrate how to create a real-time line chart using websockets and Plotly, a popular JavaScript charting library. We'll also leverage Pingerchips, a service that provides managed websockets, to simplify the backend setup.
 
-**Prerequisites:**
+## Prerequisites
 Before you get started, make sure you have the following:
 
 1. Basic knowledge of HTML, JavaScript, and CSS.
 2. A Pingerchips account for accessing managed websockets.
 3. A code editor of your choice.
-
-**Step 1: Set Up the HTML Structure**
+#### Step 1: Set Up the HTML Structure
 Create a new HTML file (e.g., `index.html`) and add the following HTML structure:
 
 ```html
@@ -39,7 +38,7 @@ Create a new HTML file (e.g., `index.html`) and add the following HTML structure
 
 ```
 
-**Step 2: Create a CSS Style File**
+#### Step 2: Create a CSS Style File
 Create a CSS file (e.g., `style.css`) to style your HTML content as needed.
 
 ```css
@@ -77,7 +76,7 @@ body {
 
 ```
 
-**Step 3: JavaScript for Real-Time Chart**
+#### Step 3: JavaScript for Real-Time Chart
 Create a JavaScript file (e.g., `script.js`) to handle the real-time chart updates using Plotly. This file will connect to the mock data source provided by `mock_data_source.js` to simulate real-time data. Here's an example of the JavaScript code:
 
 ```javascript
@@ -110,7 +109,7 @@ channel.bind("client-message", (data) => {
 });
 ```
 
-**Step 4: Set Up the Mock Data Source**
+#### Step 4: Set Up the Mock Data Source
 Create a JavaScript file named `mock_data_source.js` with the following code to simulate incoming data. Replace `"YOUR_PINGERCHIPS_KEY"` with your Pingerchips app key.
 
 ```javascript
@@ -148,8 +147,8 @@ setInterval(() => {
 }, 1000);
 ```
 
-**Step 5: Test and Deploy**
+#### Step 5: Test and Deploy
 Open your HTML file in a web browser. It will display the real-time line chart that updates as data is received through websockets from the mock data source. Make sure to host your HTML file on a web server if you plan to deploy it online.
 
-**Conclusion:**
+## Conclusion:
 In this tutorial, you learned how to create a real-time data visualization using websockets and Plotly. By leveraging Pingerchips' managed websockets service and simulating real-time data with the mock data source, you can easily integrate real-time data into your web applications. This setup is suitable for various use cases, including monitoring, analytics, and more. Feel free to customize the chart and styling to suit your specific needs.
