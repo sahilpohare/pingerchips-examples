@@ -2,7 +2,12 @@
 
 ## Introduction
 
-Websockets are a powerful tool for building real-time applications. They enable the server and client to communicate with each other in real time by establishing a persistent connection between the two. This allows the server to send data to the client without the client having to request it. In this tutorial, we will create a simple real-time chat application with NodeJs using PingerChips and Pusher. PingerChips is a hosted service that allows you to easily add real-time functionality to your applications. We will build a basic chat app that demonstrates how to send and receive messages in real time.
+Websockets are a powerful tool for building real-time applications. They enable the server and client to communicate with each other in real time by establishing a persistent connection between the two. This allows the server to send data to the client without the client having to request it.
+
+You can use libraries like Socket.io to implement websockets in your applications. However, Socket.io is not the only option. There are other libraries that can be used to implement websockets in your applications. But in production, it is very hard to maintain and scale the websockets. You need to manage the servers, load balancers along with maintaining state of the connections and having communication between the servers.
+
+PingerChips is a hosted service that allows you to easily add real-time functionality to your applications. We will build a basic chat app that demonstrates how to send and receive messages in real time.
+In this tutorial, we will create a simple real-time chat application with NodeJs using PingerChips and Pusher.
 
 ## Step 1: Create a New Node.js Project\*\*
 
