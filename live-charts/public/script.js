@@ -1,11 +1,9 @@
-const pingerchips = new Pingerchips("PINGERCHIPS APP KEY", {
-    wsHost: "ws.pingerchips.com",
-    wsPort: 6001,
+const pingerchips = new Pingerchips("clo68vtnl0004ml08im0hw4n2", {
     forceTLS: false,
     cluster: "mt1"
 });
 
-
+console.log(pingerchips)
 // Subscribe to a Channel
 const channel = pingerchips.subscribe("graph-data");
 

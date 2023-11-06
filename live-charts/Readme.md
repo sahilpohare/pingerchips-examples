@@ -16,6 +16,12 @@ Before you get started, make sure you have the following:
 
 Create a new HTML file (e.g., `index.html`) and add the following HTML structure:
 
+Include this in your html file:
+
+```html
+<script src="https://unpkg.com/pingerchips-js@1.0.1-a/dist/web/pingerchips.min.js"></script>
+```
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -32,7 +38,7 @@ Create a new HTML file (e.g., `index.html`) and add the following HTML structure
             <span>Display real-time data using websockets</span>
         </div>
         <div class="wrapper">
-            <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+            <script src="https://unpkg.com/pingerchips-js@1.0.1-a/dist/web/pingerchips.min.js"></script>
             <div id="chart"></div>
             <script src="script.js"></script>
             <script>
@@ -123,9 +129,9 @@ channel.bind("client-message", (data) => {
 Create a JavaScript file named `mock_data_source.js` with the following code to simulate incoming data. Replace `"YOUR_PINGERCHIPS_KEY"` with your Pingerchips app key.
 
 ```javascript
-const PusherJS = require("pusher-js");
+const Pingerchips = require("pusher-js");
 
-let client = new PusherJS("YOUR_PINGERCHIPS_KEY", {
+let client = new Pingerchips("YOUR_PINGERCHIPS_KEY", {
     wsHost: "ws.pingerchips.com",
     wsPort: 6001,
     forceTLS: false,

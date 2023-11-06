@@ -1,9 +1,7 @@
 const Pingerchips = require("pingerchips-js");
 const crypto = require("crypto");
 
-let client = new Pingerchips("YOUR PINGERCHIPS KEY", {
-  wsHost: "ws.pingerchips.com",
-  wsPort: 6001,
+let client = new Pingerchips("clo68vtnl0004ml08im0hw4n2", {
   forceTLS: false,
   disableStats: true,
   enabledTransports: ["ws", "wss"],
