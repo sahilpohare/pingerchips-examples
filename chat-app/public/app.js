@@ -1,4 +1,4 @@
-const pusher = new Pusher("PINGERCHIPS KEY", {
+const pingerchips = new Pingerchips("clo68vtnl0004ml08im0hw4n2", {
   forceTLS: false,
   cluster: "mt1",
 });
@@ -8,7 +8,7 @@ const messagesDiv = document.getElementById("messages");
 
 // Subscribe to a Channel
 // In this case it is analogous to group chat room, or personal chat room for messaging
-const channel = pusher.subscribe("chat");
+const channel = pingerchips.subscribe("chat");
 
 // Add an event listner which will trigger sendMessage function on click of send button
 document.getElementById("send").addEventListener("click", () => {
