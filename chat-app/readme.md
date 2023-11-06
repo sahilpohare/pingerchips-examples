@@ -2,7 +2,7 @@
 
 In this tutorial, we will create a simple real-time chat application with NodeJs using PingerChips and Pusher. PingerChips is a hosted service that allows you to easily add real-time functionality to your applications. We will build a basic chat app that demonstrates how to send and receive messages in real time.
 
-**Step 1: Create a New Node.js Project**
+## Step 1: Create a New Node.js Project**
 
 In your terminal, create a new Node.js project and navigate to the project directory:
 
@@ -12,7 +12,7 @@ cd simple-chat-app
 npm init -y
 ```
 
-**Step 2: Install Required Dependencies**
+## Step 2: Install Required Dependencies**
 
 You need to install the necessary libraries: Express, Pusher
 
@@ -20,11 +20,11 @@ You need to install the necessary libraries: Express, Pusher
 npm install express pusher
 ```
 
-**Step 3: Set Up PingerChips Account**
+ ## Step 3: Set Up PingerChips Account**
 
 1. Go to the [PingerChips website](https://pingerchips.com) and sign up for a free account.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1698659114186/293512be-5259-47e6-be16-1f92ec1de77a.png align="center")
+    ![c](https://cdn.hashnode.com/res/hashnode/image/upload/v1698659114186/293512be-5259-47e6-be16-1f92ec1de77a.png align="center")
     
 2. Create a new app in your PingerChips dashboard to get your API credentials (App ID, Key, Secret).
     
@@ -37,7 +37,7 @@ npm install express pusher
 
 > ***NOTE:*** Make sure client messages are enabled.
 
-**Step 4: Create the Express Server (server.js)**
+## Step 4: Create the Express Server (server.js)**
 
 Create a file named `server.js` and set up your Express server:
 
@@ -53,7 +53,7 @@ http.listen(3000, () => {
 });
 ```
 
-**Step 5: Create the HTML and JavaScript for the Chat Interface (public/index.html)**
+## Step 5: Create the HTML and JavaScript for the Chat Interface (public/index.html)**
 
 Create an `index.html` file inside a `public` folder to serve as the chat interface:
 
@@ -75,7 +75,7 @@ Create an `index.html` file inside a `public` folder to serve as the chat interf
 </html>
 ```
 
-**Step 6: Create the Chat Logic (public/app.js)**
+## Step 6: Create the Chat Logic (public/app.js)**
 
 Create an `app.js` file inside the `public` folder to handle the chat logic:
 
@@ -126,7 +126,7 @@ channel.bind("client-message", (data) => {
 });
 ```
 
-**Step 7: Start the Server**
+## Step 7: Start the Server**
 
 In your terminal, run the following command to start the Node.js server:
 
